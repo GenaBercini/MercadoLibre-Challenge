@@ -16,19 +16,25 @@ import {
 import {AiOutlineSearch} from "react-icons/ai";
 import {BiChevronDown} from "react-icons/bi";
 import {IoLocationOutline, IoCartOutline} from "react-icons/io5";
+import {Link} from "react-router-dom";
 
 import logo from "../../../assets/logo.png";
 import navheader from "../../../assets/banner.webp";
 import {categories} from "../../utils/categoriesmock";
 
 const NavBar: React.FC = () => {
+  let navBarOptions: string[] = ["Ofertas", "Historial", "Supermercado", "Moda", "Vender", "Ayuda"];
+  let accountOptions: string[] = ["Creá tu cuenta", "Ingresá", "Mis compras"];
+
   return (
     <Box backgroundColor="primary.500" boxShadow="base" minWidth="1184px" paddingY={2}>
       <Container maxWidth="container.xl" minWidth="1184px">
         <Stack minWidth="1184px" spacing={1}>
           <Stack direction={{base: "column", md: "row"}} justifyContent="space-between">
             <Stack direction="row" flex={1} spacing={14}>
-              <Image objectFit="contain" src={logo} />
+              <Link to="/">
+                <Image objectFit="contain" src={logo} />
+              </Link>
               <Stack
                 alignItems="center"
                 backgroundColor="white"
@@ -62,7 +68,7 @@ const NavBar: React.FC = () => {
           </Stack>
 
           <Stack alignItems="baseline" direction="row" justifyContent="space-between">
-            <Stack alignItems="baseline" direction="row" spacing="4.3rem">
+            <Stack alignItems="baseline" direction="row" spacing="3.8rem">
               <Stack
                 _hover={{borderColor: "blackAlpha.200", borderRadius: 5}}
                 alignItems="center"
@@ -71,9 +77,9 @@ const NavBar: React.FC = () => {
                 cursor="pointer"
                 direction="row"
                 padding={0.5}
-                spacing={0}
+                spacing={1}
               >
-                <Icon as={IoLocationOutline} color="blackAlpha.700" height={6} width={6} />
+                <Icon as={IoLocationOutline} color="blackAlpha.700" height={7} width={7} />
                 <Stack spacing={-1}>
                   <Text color="blackAlpha.600" fontSize="xs" lineHeight="normal">
                     Enviar a
@@ -114,51 +120,34 @@ const NavBar: React.FC = () => {
                       ))}
                   </MenuList>
                 </Menu>
-                <Text _hover={{color: "blackAlpha.800"}} cursor="pointer" transition="0.3s">
-                  Ofertas
-                </Text>
-                <Text _hover={{color: "blackAlpha.800"}} cursor="pointer" transition="0.3s">
-                  Historial
-                </Text>
-                <Text _hover={{color: "blackAlpha.800"}} cursor="pointer" transition="0.3s">
-                  Supermercado
-                </Text>
-                <Text _hover={{color: "blackAlpha.800"}} cursor="pointer" transition="0.3s">
-                  Moda
-                </Text>
-                <Text _hover={{color: "blackAlpha.800"}} cursor="pointer" transition="0.3s">
-                  Vender
-                </Text>
-                <Text _hover={{color: "blackAlpha.800"}} cursor="pointer" transition="0.3s">
-                  Ayuda
-                </Text>
+                {navBarOptions?.map((option, index) => {
+                  return (
+                    <Text
+                      key={index}
+                      _hover={{color: "blackAlpha.800"}}
+                      cursor="pointer"
+                      transition="0.3s"
+                    >
+                      {option}
+                    </Text>
+                  );
+                })}
               </Stack>
             </Stack>
             <Stack alignItems="center" direction="row" fontSize="sm" spacing={5}>
-              <Text
-                _hover={{color: "blackAlpha.900"}}
-                color="blackAlpha.800"
-                cursor="pointer"
-                transition="0.3s"
-              >
-                Creá tu cuenta
-              </Text>
-              <Text
-                _hover={{color: "blackAlpha.900"}}
-                color="blackAlpha.800"
-                cursor="pointer"
-                transition="0.3s"
-              >
-                Ingresá
-              </Text>
-              <Text
-                _hover={{color: "blackAlpha.900"}}
-                color="blackAlpha.800"
-                cursor="pointer"
-                transition="0.3s"
-              >
-                Mis compras
-              </Text>
+              {accountOptions?.map((option, index) => {
+                return (
+                  <Text
+                    key={index}
+                    _hover={{color: "blackAlpha.900"}}
+                    color="blackAlpha.800"
+                    cursor="pointer"
+                    transition="0.3s"
+                  >
+                    {option}
+                  </Text>
+                );
+              })}
               <Icon
                 _hover={{color: "blackAlpha.900"}}
                 as={IoCartOutline}
