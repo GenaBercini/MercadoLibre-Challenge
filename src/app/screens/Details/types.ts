@@ -10,6 +10,12 @@ export interface OtherProduct extends Record<string, any> {
   price: number;
 }
 
+export interface QandA extends Record<string, any> {
+  question: string;
+  answer: string;
+  date: string;
+}
+
 export interface Product extends Record<string, any> {
   id?: string;
   title?: string;
