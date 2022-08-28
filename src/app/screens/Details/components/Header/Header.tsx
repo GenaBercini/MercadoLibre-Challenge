@@ -17,19 +17,13 @@ const Header: React.FC = () => {
           <Text marginRight={1}>Volver al listado</Text>
           <Stack alignItems="baseline" direction="row" marginLeft={1}>
             <Link>Juegos y Juguetes</Link>
-            <Icon
-              alignSelf="center"
-              as={VscChevronRight}
-              color="blackAlpha.700"
-              marginLeft="2px"
-              marginRight="-7px"
-            />
+            <Icon alignSelf="center" as={VscChevronRight} color="blackAlpha.700" />
             <Link>Peluches</Link>
           </Stack>
         </Stack>
         <Stack
           direction="row"
-          divider={<StackDivider alignSelf="center" borderColor="blackAlpha.300" height={3.5} />}
+          divider={<StackDivider alignSelf="center" borderColor="blackAlpha.300" height={3} />}
           spacing={3}
         >
           <Link>Compartir</Link>

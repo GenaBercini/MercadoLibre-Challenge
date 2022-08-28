@@ -2,6 +2,13 @@ import {Stack, StackDivider} from "@chakra-ui/react";
 import React from "react";
 
 import {Product} from "../../types";
+import Carrousel from "../Carrousel/Carrousel";
+import Description from "../Description/Description";
+import FeaturesTable from "../FeaturesTable/FeaturesTable";
+import Galery from "../Galery/Galery";
+import Information from "../Information/Information";
+import InfoSeller from "../InfoSeller/InfoSeller";
+import Payment from "../Payment/Payment";
 
 interface Props {
   product: Product;
@@ -22,11 +29,10 @@ const DetailsBox: React.FC<Props> = ({product}) => {
         marginRight={0}
         maxWidth="768px"
       >
-        {/* <Galery product={mock.product} />
-        <Carrousel product={mock.product} />
+        <Galery product={product} />
+        <Carrousel product={product} />
         <FeaturesTable />
         <Description />
-        <Review /> */}
       </Stack>
       <Stack maxWidth="368px" spacing={5} width="368px">
         <Stack
@@ -36,11 +42,9 @@ const DetailsBox: React.FC<Props> = ({product}) => {
           position="sticky"
           top="-35rem"
         >
-          {/* <Information product={mock.product} />
+          <Information product={product} />
           <InfoSeller />
-          <MedioPago />
-          <Promote />
-          <MercadoShops /> */}
+          <Payment />
         </Stack>
       </Stack>
     </Stack>

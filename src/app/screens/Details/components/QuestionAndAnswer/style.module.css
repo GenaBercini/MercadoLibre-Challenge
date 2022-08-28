@@ -1,0 +1,10 @@
+.report {
+    display: inline-block;
+    padding-left: 10px;
+    height: 5px;
+    visibility: hidden;
+}
+
+.question:hover .report {
+    visibility: visible;
+}
