@@ -9,6 +9,9 @@ import Galery from "../Galery/Galery";
 import Information from "../Information/Information";
 import InfoSeller from "../InfoSeller/InfoSeller";
 import Payment from "../Payment/Payment";
+import MercadoShops from "../MercadoShops.tsx/MercadoShops";
+import Promote from "../Promote/Promote";
+import Review from "../Review/Review";
 
 interface Props {
   product: Product;
@@ -33,6 +36,7 @@ const DetailsBox: React.FC<Props> = ({product}) => {
         <Carrousel product={product} />
         <FeaturesTable />
         <Description />
+        <Review />
       </Stack>
       <Stack maxWidth="368px" spacing={5} width="368px">
         <Stack
@@ -45,6 +49,8 @@ const DetailsBox: React.FC<Props> = ({product}) => {
           <Information product={product} />
           <InfoSeller />
           <Payment />
+          <MercadoShops />
+          <Promote />
         </Stack>
       </Stack>
     </Stack>

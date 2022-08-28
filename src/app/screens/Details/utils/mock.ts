@@ -112,6 +112,101 @@ export default {
           price: 3799,
         },
       ],
+      comments: [
+        {
+          title: "Totalmente recomendable!!!",
+          comment: "Me encantó lo compre para regalar y quedé re bien!!! excelente calidad!.",
+          date: "Hace 2 dias",
+          id: 0,
+        },
+        {
+          title: "Hermoso excelente",
+          comment: "Hermoso es para el cumple de mi hija. Excelente.",
+          date: "Hace 6 meses",
+          id: 1,
+        },
+        {
+          title: "Muy bueno",
+          comment: "Muy bueno, excelente producto, es lo que esperaba",
+          date: "Hace 7 meses",
+          id: 2,
+        },
+      ],
+      mercadoShop: [
+        {
+          store: "TEDDYPLANET21",
+          title: "Peluche Almohada Soft Animales Acostados 46cm Largo",
+          price: 3099,
+          url: "https://http2.mlstatic.com/D_Q_NP_653616-MLA46288544219_062021-AB.webp",
+        },
+        {
+          store: "ACHUBAE JUGUETERIA",
+          title: "Animales Tiernos Suaves De Peluche Smoochy Pals 35x24",
+          price: 3045,
+          url: "https://http2.mlstatic.com/D_Q_NP_902726-MLA49423393723_032022-AB.webp",
+        },
+        {
+          store: "cinemashop",
+          title: "Peluche Squishmallows 25 Cm - Star Wars - The Child",
+          price: 9205,
+          url: "https://http2.mlstatic.com/D_Q_NP_899443-MLA49937599694_052022-AB.webp",
+        },
+        {
+          store: "TEDDYPLANET21",
+          title: "Peluche Olaf 25 Cm Interactivo Camina Repite Frozen",
+          price: 7239,
+          url: "https://http2.mlstatic.com/D_Q_NP_996806-MLA46808632475_072021-AB.webp",
+        },
+      ],
+      promoteProducts: [
+        {
+          url: "https://http2.mlstatic.com/D_Q_NP_2X_649746-MLA46415134138_062021-AB.webp",
+          price: 24855,
+          title: "Peluche Oso Gigante Sentado Phi Phi Toys 1.90 Mts Parado",
+        },
+        {
+          url: "https://http2.mlstatic.com/D_Q_NP_2X_737150-MLA42756987304_072020-AB.webp",
+          price: 15699,
+          title: "Peluche Gigante Cienpies Didactico 1.5 Mts",
+        },
+        {
+          url: "https://http2.mlstatic.com/D_Q_NP_2X_967305-MLA47451123121_092021-AB.webp",
+          price: 4799,
+          title: "Peluche Stitch Y Angel Sobre Corazon 20 X 25 Cm Original",
+        },
+        {
+          url: "https://http2.mlstatic.com/D_Q_NP_2X_779884-MLA49024850036_022022-AB.webp",
+          price: 28609,
+          title: "Peluche Magico Las Pistas De Blue Con Sonido Y Movimiento",
+        },
+      ],
+      rating: [
+        {
+          stars: "5",
+          value: 100,
+          people: 3,
+        },
+        {
+          stars: "4",
+          value: 0,
+          people: 0,
+        },
+        {
+          stars: "3",
+          value: 0,
+          people: 0,
+        },
+        {
+          stars: "2",
+          value: 0,
+          people: 0,
+        },
+        {
+          stars: "1",
+          value: 0,
+          people: 0,
+        },
+      ],
       video_id: null,
       descriptions: [
         {
