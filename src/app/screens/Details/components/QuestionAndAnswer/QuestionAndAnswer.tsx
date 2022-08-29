@@ -17,7 +17,7 @@ const QuestionAndAnswer: React.FC = () => {
   const [questionAndAnswers, setQuestionAndAnswers] = useState<QandA[]>([
     {
       question:
-        "Hola buenos dias, queria saber si llega envuelto y con tarjetita de dedicatoria? Espero su repuesta.",
+        "Hola buenos dias, queria saber si llega envuelto. Espero su repuesta.",
       answer: "Hola se envía envuelto y si queres le podemos poner una dedicatoria",
       date: "08/08/2022",
     },
