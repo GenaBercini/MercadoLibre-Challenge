@@ -49,8 +49,8 @@ const DetailsBox: React.FC<Props> = ({product}) => {
           <Information product={product} />
           <InfoSeller />
           <Payment />
-          <MercadoShops />
           <Promote />
+          <MercadoShops />
         </Stack>
       </Stack>
     </Stack>

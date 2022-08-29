@@ -9,7 +9,7 @@ const Bottom: React.FC = () => {
         divider={<StackDivider alignSelf="center" borderColor="blackAlpha.400" height={3} />}
         justifyContent="flex-end"
         marginBottom={-10}
-        marginTop={5}
+        marginTop={2}
       >
         <Text>
           Publicación <b>#1108308238</b>
