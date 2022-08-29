@@ -1,13 +1,13 @@
 import React from "react";
-import {Text} from "@chakra-ui/react";
-import {Link} from "react-router-dom";
+
+import mock from "../Details/utils/mock";
+
+import Card from "./components/Card";
 
 const HomeScreen: React.FC = () => {
   return (
     <div>
-      <Text>{`<HomeScreen />`}</Text>
-      <br />
-      <Link to="/details">Ver página de detalle de producto</Link>
+      <Card product={mock.product} />
     </div>
   );
 };
